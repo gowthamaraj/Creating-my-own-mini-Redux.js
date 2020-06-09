@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redux-TODOlist</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <!-- wrapper covers all the content in the body -->
+    <div class="wrapper">
+
+        <!-- header of the app -->
+        <header class="text-center">
+            <h1>Personal List Maker</h1>
+        </header>
+
+
+        <!-- to create a new list -->
+        <section class="list-create">
+            <div class="list-name">
+                <i class="fa fa-refresh fa-spin" id="spin"></i><p>List-Name : </p>
+            </div>
+            <form class="form-inline" id="list">
+                <div class="form-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><label for="list-create-name">List Name</label></div>
+                      </div>
+                  <input type="text" class="form-control" id="list-create-name" placeholder="Gowtham's list">
+                  <div class="input-group-append"><button type="submit" class="btn btn-primary">Make IT!</button>
+                  </div>    
+                </div>
+            </form>
+        </section>
+
+        <!-- todo list section -->
+        <section class="todo-list">
+            <form class="form-inline" id="todo">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="todo_create" name="todo_create" placeholder="Add the TODO">
+                  <div class="input-group-append"><button type="submit" class="btn btn-primary">Add</button>
+                  </div>    
+                </div>
+            </form>
+            <ul class="list-group" id="todo_list">
+              </ul>
+        </section>
+
+        <!-- goal list section -->
+        <section class="goal-list">
+            <form class="form-inline" id="goal">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="goal_create" name="goal_create" placeholder="Add the GOAL">
+                  <div class="input-group-append"><button type="submit" class="btn btn-primary">Add</button>
+                  </div>    
+                </div>
+            </form>
+            <ul class="list-group" id="goal_list">
+              </ul>
+        </section>
+
+        <footer>
+            <p>Made by Gowthamaraj</p>
+        </footer>
+        
+    </div>
+    <script src="./redux-mini.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
