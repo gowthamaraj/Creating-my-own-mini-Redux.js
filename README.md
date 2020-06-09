@@ -5,7 +5,7 @@ This app is created with bootstrap and vanilla JS. The application has the follo
 3) Mark as completed.
 4) Add name to the List. 
 
-live on:[https://gowthamaraj-react-todo.netlify.app/](https://gowthamaraj-react-todo.netlify.app/)
+live on:[https://gowthamaraj.github.io/Creating-my-own-mini-Redux.js/](https://gowthamaraj.github.io/Creating-my-own-mini-Redux.js/)
 
 
 ## Screenshot
